@@ -88,7 +88,7 @@ rule21 = ctrl.Rule(degree_of_dirt['medium'] | type_of_dirt['medium'] | weight['m
 rule22 = ctrl.Rule(degree_of_dirt['soft'] | type_of_dirt['medium'] | weight['small'], (time['Medium'],
                                                                                        water_consumption['Small'],
                                                                                        detergents['Medium'],
-                                                                                       turnover['average']))
+                                                                                       turnover['large']))
 
 rule3 = ctrl.Rule(degree_of_dirt['large'] | type_of_dirt['notGreasy'] | weight['large'], (time['Medium'],
                                                                                           water_consumption['Medium'],
